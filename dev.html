@@ -7,14 +7,32 @@
 		<script src="/_spine/apa.spine.3.0.js"></script>
 		
 		<script src="devscripts/init.js"></script>
+		<script src="devscripts/observer.navigation.js"></script>
+		
+		<script src="devscripts/framework.controller.js"></script>
+		<script src="devscripts/framework.view.js"></script>
+		<script src="devscripts/start.controller.js"></script>
+		<script src="devscripts/start.view.js"></script>
+		<script src="devscripts/input.controller.js"></script>
+		<script src="devscripts/input.view.js"></script>
+		<script src="devscripts/game.controller.js"></script>
+		<script src="devscripts/game.view.js"></script>
+		<script src="devscripts/finish.controller.js"></script>
+		<script src="devscripts/finish.view.js"></script>
+		
 		
 		<script>
-			apa.params.debug 		= true;
+			apa.params.debug 		= false;
 			apa.params.development 	= true;
 		</script>
 </head>
 <body>
 
-<div class="apaOuterFrame" data-package="gensummit.live" id="genSummit">
+<div class="apaOuterFrame" data-package="gensummit.live" id="genSummit"></div>
+
+<audio id="audio" loop preload="true">
+  <source src="content/hb.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 </body>
 </html>
